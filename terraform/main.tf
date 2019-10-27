@@ -1,6 +1,6 @@
 provider "google" {
   credentials = "${file("${lookup(var.credential, "data")}")}"
-  project     = "${lookup(var.project, "${terraform.workspace}")}"
+  project     = "${lookup(var.project_id, "${terraform.workspace}")}"
   region      = "asia-northeast1"
 }
 

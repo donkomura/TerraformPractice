@@ -1,4 +1,4 @@
-variable "project" {
+variable "project_id" {
   default = {
     default = "<project-id>"
   }
